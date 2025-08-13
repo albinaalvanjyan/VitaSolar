@@ -44,3 +44,13 @@
     opacity: 0;
     z-index: 0;
 }
+
+@media(max-width: 800px){
+    .content{
+        flex-direction: column;
+        gap: 100px;
+        .slider{
+            flex:auto;
+        }
+    }
+}

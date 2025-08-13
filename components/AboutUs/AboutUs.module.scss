@@ -47,3 +47,13 @@
 
     }
 }
+
+@media(max-width: 1100px){
+    .section{
+        overflow-x: auto;
+    }
+    .section_content{
+        flex-direction: column;
+        gap: 100px !important;
+    }
+}

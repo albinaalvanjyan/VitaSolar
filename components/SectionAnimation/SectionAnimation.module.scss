@@ -35,3 +35,16 @@
     }
   }
   
+
+  @media (max-width: 768px) {
+    .reveal-left,
+    .reveal-right {
+      transform: translateY(24px); 
+    }
+  
+    .reveal-left.in,
+    .reveal-right.in {
+      transform: translateY(0);
+      opacity: 1;
+    }
+  }

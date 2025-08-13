@@ -55,3 +55,27 @@
         }
     }
 }
+
+@media(max-width:1130px){
+    .content{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 50px;
+        margin-top: 50px;
+        button{
+            display: block;
+        }
+        label{
+            width: 100%;
+        }
+    }
+}
+
+@media(max-width: 511px){
+   .content{
+    nav{
+        display: none;
+    }
+   }
+}

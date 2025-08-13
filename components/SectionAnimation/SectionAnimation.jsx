@@ -22,10 +22,10 @@ export default function SectionAnimation({ children, className, id, direction = 
     return () => observer.disconnect();
   }, [delay]);
 
-  const directionClass = 
+  const directionClass =
     direction === "left" ? s['reveal-left'] :
-    direction === "right" ? s['reveal-right'] :
-    s.reveal;
+      direction === "right" ? s['reveal-right'] :
+        s.reveal;
 
   return (
     <section ref={ref} className={`${directionClass} ${className || ''}`} id={id}>
