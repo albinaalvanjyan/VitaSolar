@@ -1,0 +1,48 @@
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 16px;
+}
+
+.label {
+    font-weight: 500;
+    margin-bottom: 20px;
+}
+
+.rangeWrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.range {
+    flex: 1;
+     -webkit-appearance: none;
+    height: 8px;
+    border-radius: 4px;
+    background: #ddd;
+    outline: none;
+
+    &::-webkit-slider-thumb {
+         -webkit-appearance: none;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #3ca990;
+        cursor: pointer;
+    }
+
+    &::-moz-range-thumb {
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #3ca990;
+        cursor: pointer;
+    }
+}
+
+.value {
+    min-width: 40px;
+    text-align: center;
+    font-weight: 500;
+}

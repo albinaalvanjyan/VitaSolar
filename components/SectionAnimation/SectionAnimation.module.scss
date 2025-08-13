@@ -1,0 +1,37 @@
+.reveal, .reveal-left, .reveal-right {
+    opacity: 0;
+    transition: transform 1s ease-out, opacity 1s ease-out;
+  }
+  
+  .reveal {
+    transform: translateY(24px);
+  }
+  .reveal.in {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .reveal-left {
+    transform: translateX(-100%);
+  }
+  .reveal-left.in {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  .reveal-right {
+    transform: translateX(100%);
+  }
+  .reveal-right.in {
+    transform: translateX(0);
+    opacity: 1;
+  }
+  
+  @media (prefers-reduced-motion: reduce) {
+    .reveal, .reveal-left, .reveal-right {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+  
